@@ -7,8 +7,8 @@
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   line-height: 1.6;
-  color: #1c2733;
-  background-color: #faf7f2;
+  color: #e3dccd;
+  background-color: #0e1a28;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -19,7 +19,7 @@ main {
 }
 
 a {
-  color: #14263a;
+  color: #d4b27a;
 }
 
 ul {
@@ -32,7 +32,7 @@ h3 {
   font-family: Georgia, "Times New Roman", serif;
   font-weight: normal;
   line-height: 1.25;
-  color: #14263a;
+  color: #f5efe2;
 }
 
 h1 {
@@ -48,7 +48,7 @@ h1 {
 }
 
 .cabecalho {
-  background-color: #faf7f2;
+  background-color: #08111b;
   border-bottom: 1px solid #b08d57;
 }
 
@@ -56,19 +56,28 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.5rem;
   letter-spacing: 0.03em;
-  color: #14263a;
+  color: #f5efe2;
   text-decoration: none;
+}
+
+.logo img {
+  width: 52px;
+  height: 56px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #faf7f2;
+  object-fit: contain;
 }
 
 .menu {
@@ -80,24 +89,26 @@ h1 {
   display: block;
   padding: 8px 14px;
   border-bottom: 2px solid transparent;
-  color: #1c2733;
+  color: #cfc8b8;
   font-size: 0.95rem;
   text-decoration: none;
 }
 
 .menu a:hover {
   border-bottom-color: #b08d57;
+  color: #f5efe2;
 }
 
 .menu a.ativo {
   border-bottom-color: #b08d57;
-  color: #14263a;
+  color: #f5efe2;
   font-weight: bold;
 }
 
 .rodape {
-  background-color: #14263a;
-  color: #d9d2c3;
+  background-color: #08111b;
+  border-top: 1px solid #2a3d54;
+  color: #a9a291;
   padding: 24px 0;
   text-align: center;
   font-size: 0.9rem;
@@ -106,9 +117,9 @@ h1 {
 .botao {
   display: inline-block;
   padding: 12px 28px;
-  background-color: #14263a;
-  color: #faf7f2;
-  border: 1px solid #14263a;
+  background-color: #b08d57;
+  color: #0e1a28;
+  border: 1px solid #b08d57;
   border-radius: 4px;
   font-weight: bold;
   letter-spacing: 0.03em;
@@ -117,9 +128,8 @@ h1 {
 }
 
 .botao:hover {
-  background-color: #b08d57;
-  border-color: #b08d57;
-  color: #14263a;
+  background-color: #dcc08c;
+  border-color: #dcc08c;
   transform: translateY(-2px);
 }
 
@@ -142,6 +152,7 @@ h1 {
 
 .abertura {
   background-color: #14263a;
+  border-bottom: 1px solid #2a3d54;
   padding: 72px 0;
   text-align: center;
 }
@@ -149,25 +160,13 @@ h1 {
 .abertura h1 {
   margin-top: 0;
   font-size: 2.5rem;
-  color: #faf7f2;
 }
 
 .abertura p {
   max-width: 560px;
   margin: 0 auto 28px;
   font-size: 1.15rem;
-  color: #d9d2c3;
-}
-
-.abertura .botao {
-  background-color: #b08d57;
-  border-color: #b08d57;
-  color: #14263a;
-}
-
-.abertura .botao:hover {
-  background-color: #faf7f2;
-  border-color: #faf7f2;
+  color: #d3ccbc;
 }
 
 .como-funciona,
@@ -189,8 +188,8 @@ h1 {
 }
 
 .passo {
-  background-color: #ffffff;
-  border: 1px solid #e4ddd0;
+  background-color: #16273a;
+  border: 1px solid #2a3d54;
   border-radius: 6px;
   padding: 24px;
   text-align: center;
@@ -204,7 +203,7 @@ h1 {
   margin-bottom: 12px;
   border: 1px solid #b08d57;
   border-radius: 50%;
-  background-color: #14263a;
+  background-color: #0e1a28;
   color: #e0c389;
   font-family: Georgia, "Times New Roman", serif;
   font-weight: bold;
@@ -215,7 +214,7 @@ h1 {
 }
 
 .beneficios {
-  background-color: #f1ece1;
+  background-color: #0a1521;
 }
 
 .beneficios-grade {
@@ -225,8 +224,8 @@ h1 {
 }
 
 .beneficio {
-  background-color: #ffffff;
-  border: 1px solid #e4ddd0;
+  background-color: #16273a;
+  border: 1px solid #2a3d54;
   border-radius: 6px;
   padding: 24px;
 }
@@ -250,10 +249,10 @@ h1 {
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
-  border: 1px solid #e4ddd0;
+  background-color: #16273a;
+  border: 1px solid #2a3d54;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(20, 38, 58, 0.08);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
   padding: 24px;
 }
 
@@ -271,7 +270,7 @@ h1 {
   margin-bottom: 20px;
   margin-top: auto;
   font-weight: bold;
-  color: #14263a;
+  color: #e0c389;
 }
 
 .card .botao {
@@ -295,7 +294,7 @@ h1 {
 
 .especialidade {
   margin-bottom: 12px;
-  color: #7a5c2e;
+  color: #d4b27a;
   font-weight: bold;
 }
 
