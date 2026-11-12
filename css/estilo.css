@@ -247,3 +247,56 @@ h1 {
 .card .botao {
   text-align: center;
 }
+
+.card-profissional {
+  align-items: center;
+  text-align: center;
+}
+
+.iniciais {
+  width: 72px;
+  height: 72px;
+  line-height: 72px;
+  margin-bottom: 16px;
+  border-radius: 50%;
+  background-color: #2f9e6e;
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.especialidade {
+  margin-bottom: 12px;
+  color: #1d6fa5;
+  font-weight: bold;
+}
+
+.lista-servicos {
+  margin-bottom: 20px;
+  margin-top: auto;
+}
+
+.lista-servicos li {
+  padding: 2px 0;
+}
+
+.card-profissional .botao {
+  width: 100%;
+}
+
+.botao {
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.botao:hover {
+  transform: translateY(-2px);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.grade-cards {
+  margin-top: 8px;
+}
