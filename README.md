@@ -2,7 +2,7 @@
 
 Site para marcar consultas em clínicas e consultórios pequenos: o paciente escolhe o serviço e o profissional, vê os horários livres e agenda.
 
-Autor: Aldo Baltar
+Autores: Aldo Baltar e Pedro Pereira
 
 ## Páginas
 
