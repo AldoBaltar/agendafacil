@@ -300,3 +300,9 @@ h1 {
 .grade-cards {
   margin-top: 8px;
 }
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
