@@ -210,3 +210,40 @@ h1 {
 .beneficio li {
   padding: 4px 0;
 }
+
+.grade-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border: 1px solid #cfe6f3;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(20, 73, 107, 0.1);
+  padding: 24px;
+}
+
+.card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.card .descricao {
+  margin-bottom: 16px;
+}
+
+.detalhes {
+  margin-bottom: 20px;
+  margin-top: auto;
+  font-weight: bold;
+  color: #14496b;
+}
+
+.card .botao {
+  text-align: center;
+}
