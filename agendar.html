@@ -25,6 +25,54 @@
   <main>
     <div class="container">
       <h1>Agendar</h1>
+      <form class="formulario">
+        <fieldset>
+          <legend>Seus dados</legend>
+          <div class="campo">
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div class="campo">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="campo">
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sobre a consulta</legend>
+          <div class="campo">
+            <label for="servico">Serviço</label>
+            <select id="servico" name="servico">
+              <option>Consulta clínica geral</option>
+              <option>Consulta de retorno</option>
+              <option>Limpeza dental</option>
+              <option>Avaliação nutricional</option>
+              <option>Sessão de fisioterapia</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="profissional">Profissional</label>
+            <select id="profissional" name="profissional">
+              <option>Dra. Marina Lopes</option>
+              <option>Dr. Paulo Mendes</option>
+              <option>Dra. Carla Nogueira</option>
+              <option>Dr. Rafael Souza</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="data">Data</label>
+            <input type="date" id="data" name="data" required>
+          </div>
+          <div class="campo">
+            <label for="observacao">Observação (opcional)</label>
+            <textarea id="observacao" name="observacao" rows="4"></textarea>
+          </div>
+        </fieldset>
+      </form>
     </div>
   </main>
 
