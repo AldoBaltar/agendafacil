@@ -556,3 +556,13 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+
+.erro {
+  margin-top: 6px;
+  color: #e8b4a8;
+  font-size: 0.9rem;
+}
+
+.erro:empty {
+  display: none;
+}

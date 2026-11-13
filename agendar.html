@@ -32,7 +32,7 @@
       </div>
       <aside class="aviso">
         <h2>Como escolher o horário</h2>
-        <p>Só os horários livres podem ser escolhidos. Os horários riscados em cinza já estão ocupados. Atendemos de segunda a sexta, das 7h às 19h.</p>
+        <p>Só os horários livres podem ser escolhidos. Os horários riscados em cinza já estão ocupados. Atendemos de segunda a sexta, das 7h às 19h, e aos sábados, das 8h às 12h.</p>
       </aside>
       <form class="formulario" method="get" action="agenda.html">
         <fieldset>
@@ -75,6 +75,7 @@
           <div class="campo">
             <label for="data">Data</label>
             <input type="date" id="data" name="data" required>
+            <p class="erro" id="aviso-data"></p>
           </div>
           <fieldset class="horarios">
             <legend>Horário</legend>
@@ -88,13 +89,13 @@
             <label for="h0830">08:30</label>
             <input type="radio" id="h0900" name="horario" value="09:00">
             <label for="h0900">09:00</label>
-            <input type="radio" id="h0930" name="horario" value="09:30" disabled>
+            <input type="radio" id="h0930" name="horario" value="09:30" data-ocupado="sim" disabled>
             <label for="h0930">09:30</label>
-            <input type="radio" id="h1000" name="horario" value="10:00" disabled>
+            <input type="radio" id="h1000" name="horario" value="10:00" data-ocupado="sim" disabled>
             <label for="h1000">10:00</label>
             <input type="radio" id="h1030" name="horario" value="10:30">
             <label for="h1030">10:30</label>
-            <input type="radio" id="h1100" name="horario" value="11:00" disabled>
+            <input type="radio" id="h1100" name="horario" value="11:00" data-ocupado="sim" disabled>
             <label for="h1100">11:00</label>
             <input type="radio" id="h1130" name="horario" value="11:30">
             <label for="h1130">11:30</label>
@@ -168,5 +169,6 @@
       <p class="rodape-final">AgendaFácil - Autores: Aldo Baltar e Pedro Pereira</p>
     </div>
   </footer>
+  <script src="js/agendar.js"></script>
 </body>
 </html>
