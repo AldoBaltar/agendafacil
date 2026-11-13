@@ -106,9 +106,57 @@ h1 {
   background-color: #08111b;
   border-top: 1px solid #2a3d54;
   color: #a9a291;
-  padding: 24px 0;
+  padding: 40px 0 24px;
+  font-size: 0.95rem;
+}
+
+.rodape-grade {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.rodape h2 {
+  margin-bottom: 12px;
+  font-size: 1.1rem;
+}
+
+.rodape li,
+.rodape address,
+.rodape p {
+  margin-bottom: 6px;
+  font-style: normal;
+}
+
+.redes {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.redes a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #5f7a96;
+  border-radius: 50%;
+  background-color: #16273a;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.redes a:hover {
+  background-color: #2a3d54;
+  transform: translateY(-2px);
+}
+
+.rodape .rodape-final {
+  margin: 32px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid #2a3d54;
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .botao {
@@ -500,5 +548,11 @@ h1 {
 
   .banner-texto h1 {
     font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .rodape-grade {
+    grid-template-columns: 1fr;
   }
 }
