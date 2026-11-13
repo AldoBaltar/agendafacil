@@ -307,3 +307,123 @@ h1 {
 .card-profissional .botao {
   width: 100%;
 }
+
+.formulario {
+  max-width: 640px;
+  margin: 0 auto 48px;
+  background-color: #16273a;
+  border: 1px solid #2a3d54;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  padding: 28px;
+}
+
+.formulario fieldset {
+  border: 1px solid #2a3d54;
+  border-radius: 6px;
+  padding: 16px 20px 8px;
+  margin-bottom: 24px;
+  min-width: 0;
+}
+
+.formulario legend {
+  padding: 0 8px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  color: #f5efe2;
+}
+
+.campo {
+  margin-bottom: 16px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="tel"],
+.formulario input[type="date"],
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 10px 12px;
+  background-color: #0e1a28;
+  color: #e3dccd;
+  border: 1px solid #5f7a96;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.formulario textarea {
+  resize: vertical;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  outline: 3px solid #9db4cc;
+  outline-offset: 1px;
+  border-color: #e9e4d8;
+}
+
+.formulario .horarios {
+  margin-bottom: 16px;
+}
+
+.horarios input {
+  position: absolute;
+  opacity: 0;
+}
+
+.horarios label {
+  display: inline-block;
+  margin: 0 8px 12px 0;
+  padding: 8px 16px;
+  background-color: #0e1a28;
+  border: 1px solid #5f7a96;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.horarios label:hover {
+  border-color: #e9e4d8;
+}
+
+.horarios input:checked + label {
+  background-color: #e9e4d8;
+  border-color: #e9e4d8;
+  color: #0e1a28;
+  font-weight: bold;
+}
+
+.horarios input:focus + label {
+  outline: 3px solid #9db4cc;
+  outline-offset: 2px;
+}
+
+.horarios input:disabled + label {
+  background-color: #1d2631;
+  border-color: #3a4552;
+  color: #77808a;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+.formulario .botao {
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.formulario .botao:focus {
+  outline: 3px solid #9db4cc;
+  outline-offset: 2px;
+}
