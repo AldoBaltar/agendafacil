@@ -25,7 +25,7 @@
   <main>
     <div class="container">
       <h1>Agendar</h1>
-      <form class="formulario">
+      <form class="formulario" method="get" action="agenda.html">
         <fieldset>
           <legend>Seus dados</legend>
           <div class="campo">
@@ -67,11 +67,32 @@
             <label for="data">Data</label>
             <input type="date" id="data" name="data" required>
           </div>
+          <fieldset class="horarios">
+            <legend>Horário</legend>
+            <input type="radio" id="h0800" name="horario" value="08:00">
+            <label for="h0800">08:00</label>
+            <input type="radio" id="h0830" name="horario" value="08:30">
+            <label for="h0830">08:30</label>
+            <input type="radio" id="h0900" name="horario" value="09:00">
+            <label for="h0900">09:00</label>
+            <input type="radio" id="h0930" name="horario" value="09:30" disabled>
+            <label for="h0930">09:30</label>
+            <input type="radio" id="h1000" name="horario" value="10:00" disabled>
+            <label for="h1000">10:00</label>
+            <input type="radio" id="h1030" name="horario" value="10:30">
+            <label for="h1030">10:30</label>
+            <input type="radio" id="h1100" name="horario" value="11:00" disabled>
+            <label for="h1100">11:00</label>
+            <input type="radio" id="h1130" name="horario" value="11:30">
+            <label for="h1130">11:30</label>
+          </fieldset>
           <div class="campo">
             <label for="observacao">Observação (opcional)</label>
             <textarea id="observacao" name="observacao" rows="4"></textarea>
           </div>
         </fieldset>
+
+        <button type="submit" class="botao">Confirmar agendamento</button>
       </form>
     </div>
   </main>
