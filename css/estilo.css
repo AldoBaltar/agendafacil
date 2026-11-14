@@ -617,3 +617,104 @@ h1 {
   margin-bottom: 12px;
   font-size: 2rem;
 }
+
+.resumo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.resumo-caixa {
+  padding: 20px;
+  background-color: #16273a;
+  border: 1px solid #2a3d54;
+  border-top: 4px solid #e9e4d8;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.resumo-agendados {
+  border-top-color: #5b9bd5;
+}
+
+.resumo-concluidos {
+  border-top-color: #4caf7a;
+}
+
+.resumo-cancelados {
+  border-top-color: #d9604f;
+}
+
+.resumo-numero {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2.2rem;
+  line-height: 1.2;
+  color: #f5efe2;
+}
+
+.resumo-texto {
+  font-size: 0.95rem;
+  color: #cfc8b8;
+}
+
+.tabela-rolagem {
+  margin-bottom: 48px;
+  border: 1px solid #2a3d54;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.tabela-agenda {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela-agenda th {
+  padding: 14px 16px;
+  background-color: #2a4561;
+  color: #f5efe2;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.tabela-agenda td {
+  padding: 12px 16px;
+  white-space: nowrap;
+}
+
+.tabela-agenda tbody tr:nth-child(odd) {
+  background-color: #16273a;
+}
+
+.tabela-agenda tbody tr:nth-child(even) {
+  background-color: #1b3047;
+}
+
+.tabela-agenda tbody tr:hover {
+  background-color: #23405c;
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.status-agendado {
+  background-color: #1f4e7a;
+  color: #d6e9fb;
+}
+
+.status-concluido {
+  background-color: #1f5c3a;
+  color: #d4f3e0;
+}
+
+.status-cancelado {
+  background-color: #7a2a22;
+  color: #fbdcd7;
+}
