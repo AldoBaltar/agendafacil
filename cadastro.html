@@ -7,12 +7,15 @@
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+  <!-- link de pular ao conteúdo (igual ao da página inicial) -->
   <a class="pular" href="#conteudo">Ir para o conteúdo</a>
+  <!-- cabeçalho (igual ao da página inicial) -->
   <header class="cabecalho">
     <div class="container cabecalho-conteudo">
       <a class="logo" href="index.html"><img src="img/logo.png" alt="" width="44" height="48"><span>AgendaFácil</span></a>
       <input type="checkbox" id="menu-aberto" class="menu-checkbox">
       <label for="menu-aberto" class="menu-botao">Menu</label>
+      <!-- menu principal, aqui a página atual é a que tem a classe ativo -->
       <nav>
         <ul class="menu">
           <li><a href="index.html">Início</a></li>
@@ -29,21 +32,26 @@
     </div>
   </header>
 
+  <!-- conteúdo da página de cadastro -->
   <main id="conteudo">
     <div class="container">
+      <!-- banner com o título da página -->
       <div class="banner banner-cadastro">
         <div class="banner-texto">
           <h1>Cadastro</h1>
           <p>Crie seu cadastro para agendar mais rápido.</p>
         </div>
       </div>
+      <!-- formulário de cadastro, depois leva para a página de agendar -->
       <form class="formulario" method="get" action="agendar.html">
+        <!-- dados pessoais do cliente -->
         <fieldset>
           <legend>Seus dados</legend>
           <div class="campo">
             <label for="nome">Nome completo</label>
             <input type="text" id="nome" name="nome" required>
           </div>
+          <!-- e-mail do cliente, a dica abaixo avisa que não pode repetir -->
           <div class="campo">
             <label for="email">E-mail</label>
             <input type="email" id="email" name="email" required>
@@ -55,6 +63,7 @@
           </div>
         </fieldset>
 
+        <!-- preferências do cliente -->
         <fieldset>
           <legend>Preferências</legend>
           <div class="campo campo-check">
@@ -63,11 +72,13 @@
           </div>
         </fieldset>
 
+        <!-- botão que envia o cadastro -->
         <button type="submit" class="botao">Criar cadastro</button>
       </form>
     </div>
   </main>
 
+  <!-- rodapé (igual ao da página inicial) -->
   <footer class="rodape">
     <div class="container">
       <div class="rodape-grade">
@@ -87,6 +98,7 @@
         </section>
         <section>
           <h2>Siga a gente</h2>
+          <!-- ícones das redes sociais -->
           <ul class="redes">
             <li><a href="https://www.whatsapp.com" title="WhatsApp"><img src="img/whatsapp.svg" alt="WhatsApp" width="24" height="24"></a></li>
             <li><a href="https://www.facebook.com" title="Facebook"><img src="img/facebook.svg" alt="Facebook" width="24" height="24"></a></li>
