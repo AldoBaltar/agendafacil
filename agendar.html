@@ -7,12 +7,15 @@
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+  <!-- link de pular ao conteúdo (igual ao da página inicial) -->
   <a class="pular" href="#conteudo">Ir para o conteúdo</a>
+  <!-- cabeçalho (igual ao da página inicial) -->
   <header class="cabecalho">
     <div class="container cabecalho-conteudo">
       <a class="logo" href="index.html"><img src="img/logo.png" alt="" width="44" height="48"><span>AgendaFácil</span></a>
       <input type="checkbox" id="menu-aberto" class="menu-checkbox">
       <label for="menu-aberto" class="menu-botao">Menu</label>
+      <!-- menu principal, aqui a página atual é a que tem a classe ativo -->
       <nav>
         <ul class="menu">
           <li><a href="index.html">Início</a></li>
@@ -29,22 +32,28 @@
     </div>
   </header>
 
+  <!-- conteúdo da página de agendamento -->
   <main id="conteudo">
     <div class="container">
+      <!-- banner com o título da página -->
       <div class="banner banner-agendar">
         <div class="banner-texto">
           <h1>Agendar</h1>
           <p>Escolha o melhor dia e horário.</p>
         </div>
       </div>
+      <!-- indicador de passos: aqui os passos 1 e 2 estão em andamento -->
       <ol class="passos-agendamento">
         <li class="atual" aria-current="step"><span class="circulo">1</span><span class="nome-passo">Seus dados</span></li>
         <li class="atual" aria-current="step"><span class="circulo">2</span><span class="nome-passo">Sobre a consulta</span></li>
         <li><span class="circulo">3</span><span class="nome-passo">Confirmação</span></li>
       </ol>
+      <!-- formulário de agendamento, envia os dados para a confirmação -->
       <form class="formulario" method="get" action="confirmacao.html">
+        <!-- primeiro grupo: dados de quem vai ser atendido -->
         <fieldset>
           <legend>Seus dados</legend>
+          <!-- nome completo, obrigatório (required) -->
           <div class="campo">
             <label for="nome">Nome completo</label>
             <input type="text" id="nome" name="nome" required>
@@ -59,8 +68,10 @@
           </div>
         </fieldset>
 
+        <!-- segundo grupo: dados da consulta -->
         <fieldset>
           <legend>Sobre a consulta</legend>
+          <!-- listas para escolher o serviço e o profissional -->
           <div class="campo">
             <label for="servico">Serviço</label>
             <select id="servico" name="servico">
@@ -80,16 +91,19 @@
               <option>Dr. Rafael Souza</option>
             </select>
           </div>
+          <!-- data da consulta, o agendar.js usa este campo -->
           <div class="campo">
             <label for="data">Data</label>
             <input type="date" id="data" name="data" required>
             <p class="erro" id="aviso-data"></p>
           </div>
+          <!-- legenda que explica o que cada tipo de horário significa -->
           <ul class="legenda">
             <li><span class="amostra amostra-livre"></span>Livre</li>
             <li><span class="amostra amostra-selecionado"></span>Selecionado</li>
             <li class="legenda-ocupado"><span class="amostra amostra-ocupado"></span>Ocupado</li>
           </ul>
+          <!-- horários: cada rádio fica escondido e o rótulo vira um botão -->
           <fieldset class="horarios">
             <legend>Horário</legend>
             <input type="radio" id="h0700" name="horario" value="07:00">
@@ -102,10 +116,12 @@
             <label for="h0830">08:30</label>
             <input type="radio" id="h0900" name="horario" value="09:00">
             <label for="h0900">09:00</label>
+            <!-- horários ocupados já vêm desabilitados no HTML -->
             <input type="radio" id="h0930" name="horario" value="09:30" data-ocupado="sim" disabled>
             <label for="h0930">09:30</label>
             <input type="radio" id="h1000" name="horario" value="10:00" data-ocupado="sim" disabled>
             <label for="h1000">10:00</label>
+            <!-- horário livre, pode ser escolhido normalmente -->
             <input type="radio" id="h1030" name="horario" value="10:30">
             <label for="h1030">10:30</label>
             <input type="radio" id="h1100" name="horario" value="11:00" data-ocupado="sim" disabled>
@@ -141,17 +157,20 @@
             <input type="radio" id="h1830" name="horario" value="18:30">
             <label for="h1830">18:30</label>
           </fieldset>
+          <!-- campo de observação, não é obrigatório -->
           <div class="campo">
             <label for="observacao">Observação (opcional)</label>
             <textarea id="observacao" name="observacao" rows="4"></textarea>
           </div>
         </fieldset>
 
+        <!-- botão que envia o formulário -->
         <button type="submit" class="botao">Confirmar agendamento</button>
       </form>
     </div>
   </main>
 
+  <!-- rodapé (igual ao da página inicial) -->
   <footer class="rodape">
     <div class="container">
       <div class="rodape-grade">
@@ -171,6 +190,7 @@
         </section>
         <section>
           <h2>Siga a gente</h2>
+          <!-- ícones das redes sociais -->
           <ul class="redes">
             <li><a href="https://www.whatsapp.com" title="WhatsApp"><img src="img/whatsapp.svg" alt="WhatsApp" width="24" height="24"></a></li>
             <li><a href="https://www.facebook.com" title="Facebook"><img src="img/facebook.svg" alt="Facebook" width="24" height="24"></a></li>
@@ -182,6 +202,7 @@
       <p class="rodape-final">AgendaFácil - Autores: Aldo Baltar e Pedro Pereira</p>
     </div>
   </footer>
+  <!-- script que ajusta os horários conforme o dia escolhido -->
   <script src="js/agendar.js"></script>
 </body>
 </html>
