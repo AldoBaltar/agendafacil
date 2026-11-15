@@ -515,6 +515,13 @@ h1 {
   font-size: 1rem;
 }
 
+.dica {
+  margin-top: 6px;
+  color: #b3ad9e;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
 .formulario textarea {
   resize: vertical;
 }
