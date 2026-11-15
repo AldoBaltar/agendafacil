@@ -801,3 +801,109 @@ h1 {
     font-size: 1.6rem;
   }
 }
+
+@page {
+  margin: 1.5cm;
+}
+
+@media print {
+  body {
+    display: block;
+    min-height: 0;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .cabecalho,
+  .rodape {
+    display: none;
+  }
+
+  .container {
+    max-width: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  .banner {
+    display: block;
+    min-height: 0;
+    aspect-ratio: auto;
+    margin: 0 0 16px;
+    background-image: none;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 0;
+  }
+
+  .banner-texto {
+    width: 100%;
+    padding: 0;
+    background-color: #ffffff;
+  }
+
+  .banner-texto h1,
+  .banner-texto p {
+    margin: 0 0 6px;
+    color: #000000;
+  }
+
+  .resumo {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .resumo-caixa {
+    padding: 8px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 0;
+  }
+
+  .resumo-numero,
+  .resumo-texto {
+    color: #000000;
+  }
+
+  .tabela-rolagem {
+    margin-bottom: 0;
+    border: none;
+    border-radius: 0;
+    overflow: visible;
+  }
+
+  .tabela-agenda {
+    font-size: 12pt;
+  }
+
+  .tabela-agenda thead {
+    display: table-header-group;
+  }
+
+  .tabela-agenda tr {
+    page-break-inside: avoid;
+  }
+
+  .tabela-agenda th,
+  .tabela-agenda td {
+    padding: 6px 8px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    color: #000000;
+    white-space: normal;
+  }
+
+  .tabela-agenda tbody tr:nth-child(odd),
+  .tabela-agenda tbody tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+
+  .status {
+    padding: 2px 8px;
+    border: 1px solid #000000;
+    border-radius: 0;
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
