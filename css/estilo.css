@@ -342,13 +342,11 @@ h1 {
   color: #d3ccbc;
 }
 
-.como-funciona,
-.beneficios {
+.como-funciona {
   padding: 56px 0;
 }
 
-.como-funciona h2,
-.beneficios h2 {
+.como-funciona h2 {
   text-align: center;
   margin-bottom: 28px;
 }
@@ -384,31 +382,6 @@ h1 {
 
 .passo h3 {
   margin-bottom: 8px;
-}
-
-.beneficios {
-  background-color: #0a1521;
-}
-
-.beneficios-grade {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.beneficio {
-  background-color: #16273a;
-  border: 1px solid #2a3d54;
-  border-radius: 6px;
-  padding: 24px;
-}
-
-.beneficio h3 {
-  margin-bottom: 12px;
-}
-
-.beneficio li {
-  padding: 4px 0;
 }
 
 .grade-cards {
@@ -908,13 +881,11 @@ textarea:focus-visible,
 }
 
 .card,
-.beneficio,
 .passo {
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .card:hover,
-.beneficio:hover,
 .passo:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
@@ -1014,7 +985,6 @@ textarea:focus-visible,
   .botao-contorno:hover,
   .redes a:hover,
   .card:hover,
-  .beneficio:hover,
   .passo:hover {
     transform: none;
   }
@@ -1105,7 +1075,6 @@ textarea:focus-visible,
 
   .grade-cards,
   .passos,
-  .beneficios-grade,
   .rodape-grade {
     grid-template-columns: 1fr;
   }
