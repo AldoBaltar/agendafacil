@@ -343,12 +343,22 @@ h1 {
 }
 
 .como-funciona {
+  padding: 28px 0;
+  border-bottom: 1px solid #2a3d54;
+}
+
+.especialidades {
   padding: 56px 0;
 }
 
-.como-funciona h2 {
+.como-funciona h2,
+.especialidades h2 {
   text-align: center;
   margin-bottom: 28px;
+}
+
+.como-funciona h2 {
+  margin-bottom: 20px;
 }
 
 .passos {
@@ -359,19 +369,17 @@ h1 {
 }
 
 .passo {
-  background-color: #16273a;
-  border: 1px solid #2a3d54;
-  border-radius: 6px;
-  padding: 24px;
-  text-align: center;
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  column-gap: 14px;
 }
 
 .numero {
-  display: inline-block;
+  grid-row: 1 / span 2;
   width: 40px;
   height: 40px;
   line-height: 38px;
-  margin-bottom: 12px;
+  text-align: center;
   border: 1px solid #5f7a96;
   border-radius: 50%;
   background-color: #0e1a28;
@@ -381,7 +389,7 @@ h1 {
 }
 
 .passo h3 {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .grade-cards {
@@ -880,13 +888,11 @@ textarea:focus-visible,
   outline-offset: 2px;
 }
 
-.card,
-.passo {
+.card {
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
-.card:hover,
-.passo:hover {
+.card:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
 }
@@ -984,8 +990,7 @@ textarea:focus-visible,
   .botao:hover,
   .botao-contorno:hover,
   .redes a:hover,
-  .card:hover,
-  .passo:hover {
+  .card:hover {
     transform: none;
   }
 }
