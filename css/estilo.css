@@ -1,9 +1,11 @@
+/* zera margens e usa box-sizing para as medidas ficarem previsíveis */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* fonte, cor do texto e fundo escuro de todas as páginas */
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   line-height: 1.6;
@@ -14,19 +16,23 @@ body {
   min-height: 100vh;
 }
 
+/* o conteúdo cresce e empurra o rodapé para o fim da tela */
 main {
   flex: 1;
   scroll-margin-top: 100px;
 }
 
+/* cor dos links */
 a {
   color: #9db4cc;
 }
 
+/* listas sem os pontinhos */
 ul {
   list-style: none;
 }
 
+/* títulos com fonte com serifa e cor clara */
 h1,
 h2,
 h3 {
@@ -36,11 +42,13 @@ h3 {
   color: #f5efe2;
 }
 
+/* tamanho do título principal */
 h1 {
   font-size: 2.1rem;
   margin: 32px 0 16px;
 }
 
+/* caixa central que limita a largura do conteúdo */
 .container {
   width: 100%;
   max-width: 1000px;
@@ -48,6 +56,7 @@ h1 {
   padding: 0 20px;
 }
 
+/* link de pular ao conteúdo: fica fora da tela até receber foco */
 .pular {
   position: absolute;
   top: 8px;
@@ -64,6 +73,7 @@ h1 {
   transform: translateY(0);
 }
 
+/* cabeçalho fixo no topo, com fundo escuro */
 .cabecalho {
   position: sticky;
   top: 0;
@@ -72,6 +82,7 @@ h1 {
   border-bottom: 1px solid #2a3d54;
 }
 
+/* logo, menu e botões lado a lado, quebram linha se faltar espaço */
 .cabecalho-conteudo {
   display: flex;
   flex-wrap: wrap;
@@ -82,6 +93,7 @@ h1 {
   padding-bottom: 14px;
 }
 
+/* logo com a imagem e o nome da clínica */
 .logo {
   display: flex;
   align-items: center;
@@ -99,12 +111,14 @@ h1 {
   object-fit: contain;
 }
 
+/* lista de links do menu, um ao lado do outro */
 .menu {
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
 }
 
+/* cada link do menu, com um traço embaixo no hover e na página atual */
 .menu a {
   display: block;
   padding: 8px 10px;
@@ -125,11 +139,13 @@ h1 {
   font-weight: bold;
 }
 
+/* grupo dos botões de entrar e de cadastrar */
 .acesso {
   display: flex;
   gap: 8px;
 }
 
+/* tamanho em comum dos dois botões de acesso */
 .botao-contorno,
 .acesso .botao {
   display: inline-flex;
@@ -139,6 +155,7 @@ h1 {
   font-size: 0.95rem;
 }
 
+/* botão de contorno (entrar): só borda, sem fundo */
 .botao-contorno {
   border: 1px solid #9db4cc;
   border-radius: 4px;
@@ -160,10 +177,12 @@ h1 {
   border-color: #f5efe2;
 }
 
+/* destaque do botão da página atual */
 .acesso .ativo {
   box-shadow: 0 0 0 2px #9db4cc;
 }
 
+/* rodapé escuro com os contatos */
 .rodape {
   background-color: #08111b;
   border-top: 1px solid #2a3d54;
@@ -172,12 +191,14 @@ h1 {
   font-size: 0.95rem;
 }
 
+/* rodapé em três colunas */
 .rodape-grade {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
 }
 
+/* títulos e textos do rodapé */
 .rodape h2 {
   margin-bottom: 12px;
   font-size: 1.1rem;
@@ -190,6 +211,7 @@ h1 {
   font-style: normal;
 }
 
+/* ícones das redes sociais, em círculos */
 .redes {
   display: flex;
   gap: 12px;
@@ -213,6 +235,7 @@ h1 {
   transform: translateY(-2px);
 }
 
+/* linha dos autores no fim do rodapé */
 .rodape .rodape-final {
   margin: 32px 0 0;
   padding-top: 20px;
@@ -221,6 +244,7 @@ h1 {
   font-size: 0.85rem;
 }
 
+/* botão preenchido, o padrão do site */
 .botao {
   display: inline-block;
   padding: 12px 28px;
@@ -239,10 +263,12 @@ h1 {
   border-color: #ffffff;
   transform: translateY(-2px);
 }
+/* espaço em volta do banner da página inicial */
 .abertura {
   padding: 32px 0 0;
 }
 
+/* banner com imagem de fundo e o texto por cima */
 .banner {
   display: flex;
   align-items: center;
@@ -257,10 +283,12 @@ h1 {
   overflow: hidden;
 }
 
+/* banner da abertura sem margem */
 .abertura .banner {
   margin: 0 auto;
 }
 
+/* imagem de fundo de cada banner */
 .banner-inicio {
   background-image: url("../img/banner.jpg");
 }
@@ -297,6 +325,7 @@ h1 {
   background-image: url("../img/familia.jpg");
 }
 
+/* banners das páginas internas são mais baixos que o da inicial */
 .banner-servicos,
 .banner-profissionais,
 .banner-agendar,
@@ -308,6 +337,7 @@ h1 {
   aspect-ratio: auto;
 }
 
+/* posição da imagem em cada banner, para o rosto não ser cortado */
 .banner-servicos {
   background-position: center 10%;
 }
@@ -327,6 +357,7 @@ h1 {
   background-position: center 28%;
 }
 
+/* caixa com o texto que fica por cima do banner */
 .banner-texto {
   width: 38%;
   padding: 0 0 0 40px;
@@ -342,15 +373,18 @@ h1 {
   color: #d3ccbc;
 }
 
+/* seção do passo a passo, com uma linha fina embaixo */
 .como-funciona {
   padding: 28px 0;
   border-bottom: 1px solid #2a3d54;
 }
 
+/* seção dos cartões de especialidade */
 .especialidades {
   padding: 56px 0;
 }
 
+/* títulos das seções, centralizados */
 .como-funciona h2,
 .especialidades h2 {
   text-align: center;
@@ -361,6 +395,7 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* os três passos lado a lado */
 .passos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -368,12 +403,14 @@ h1 {
   list-style: none;
 }
 
+/* cada passo: círculo numerado ao lado do texto */
 .passo {
   display: grid;
   grid-template-columns: 40px 1fr;
   column-gap: 14px;
 }
 
+/* círculo com o número do passo */
 .numero {
   grid-row: 1 / span 2;
   width: 40px;
@@ -392,6 +429,7 @@ h1 {
   margin-bottom: 4px;
 }
 
+/* grade que organiza os cartões em colunas */
 .grade-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -400,6 +438,7 @@ h1 {
   margin-bottom: 48px;
 }
 
+/* cartão padrão: fundo, borda e sombra */
 .card {
   display: flex;
   flex-direction: column;
@@ -410,6 +449,7 @@ h1 {
   padding: 24px;
 }
 
+/* textos de dentro do cartão */
 .card h2 {
   font-size: 1.25rem;
   margin-top: 0;
@@ -431,11 +471,13 @@ h1 {
   text-align: center;
 }
 
+/* cartão do profissional, tudo centralizado */
 .card-profissional {
   align-items: center;
   text-align: center;
 }
 
+/* foto redonda do profissional */
 .foto {
   width: 120px;
   height: 120px;
@@ -446,12 +488,14 @@ h1 {
   object-position: center top;
 }
 
+/* nome da especialidade em destaque */
 .especialidade {
   margin-bottom: 12px;
   color: #9db4cc;
   font-weight: bold;
 }
 
+/* lista de serviços do cartão do profissional */
 .lista-servicos {
   margin-bottom: 20px;
   margin-top: auto;
@@ -465,6 +509,7 @@ h1 {
   width: 100%;
 }
 
+/* formulário em formato de cartão */
 .formulario {
   max-width: 640px;
   margin: 0 auto 48px;
@@ -475,6 +520,7 @@ h1 {
   padding: 28px;
 }
 
+/* grupos de campos, com borda e título */
 .formulario fieldset {
   border: 1px solid #2a3d54;
   border-radius: 6px;
@@ -490,6 +536,7 @@ h1 {
   color: #f5efe2;
 }
 
+/* cada campo: rótulo em cima e caixa embaixo */
 .campo {
   margin-bottom: 16px;
 }
@@ -500,6 +547,7 @@ h1 {
   font-weight: bold;
 }
 
+/* mesma aparência para todas as caixas de preenchimento */
 .formulario input[type="text"],
 .formulario input[type="email"],
 .formulario input[type="tel"],
@@ -516,6 +564,7 @@ h1 {
   font-size: 1rem;
 }
 
+/* textinho de ajuda embaixo do campo */
 .dica {
   margin-top: 6px;
   color: #b3ad9e;
@@ -523,16 +572,19 @@ h1 {
   line-height: 1.4;
 }
 
+/* linha com o link para o cadastro, na página de login */
 .link-cadastro {
   max-width: 640px;
   margin: -24px auto 48px;
   text-align: center;
 }
 
+/* o campo de observação só cresce na vertical */
 .formulario textarea {
   resize: vertical;
 }
 
+/* destaque quando o campo recebe foco */
 .formulario input:focus,
 .formulario select:focus,
 .formulario textarea:focus {
@@ -541,6 +593,7 @@ h1 {
   border-color: #e9e4d8;
 }
 
+/* checkbox ao lado do texto */
 .campo-check {
   display: flex;
   align-items: flex-start;
@@ -561,6 +614,7 @@ h1 {
   font-weight: normal;
 }
 
+/* legenda dos horários, com os itens em linha */
 .legenda {
   display: flex;
   flex-wrap: wrap;
@@ -575,6 +629,7 @@ h1 {
   gap: 8px;
 }
 
+/* quadradinho de exemplo da legenda */
 .amostra {
   position: relative;
   display: inline-block;
@@ -585,12 +640,14 @@ h1 {
   background-color: #0e1a28;
 }
 
+/* amostra do horário escolhido, com borda mais grossa */
 .amostra-selecionado {
   background-color: #e9e4d8;
   border: 3px solid #e9e4d8;
   box-shadow: inset 0 0 0 2px #0e1a28;
 }
 
+/* amostra do horário ocupado, com um risco no meio */
 .amostra-ocupado {
   background-color: #1d2631;
   border-color: #3a4552;
@@ -609,15 +666,18 @@ h1 {
   text-decoration: line-through;
 }
 
+/* espaço embaixo do grupo de horários */
 .formulario .horarios {
   margin-bottom: 16px;
 }
 
+/* esconde o rádio, quem aparece é o rótulo */
 .horarios input {
   position: absolute;
   opacity: 0;
 }
 
+/* o rótulo vira um botão de horário */
 .horarios label {
   display: inline-block;
   margin: 0 8px 12px 0;
@@ -633,6 +693,7 @@ h1 {
   border-color: #e9e4d8;
 }
 
+/* horário escolhido fica com fundo claro */
 .horarios input:checked + label {
   background-color: #e9e4d8;
   border-color: #e9e4d8;
@@ -645,6 +706,7 @@ h1 {
   outline-offset: 2px;
 }
 
+/* horário ocupado: cinza, riscado e sem clique */
 .horarios input:disabled + label {
   background-color: #1d2631;
   border-color: #3a4552;
@@ -653,6 +715,7 @@ h1 {
   cursor: not-allowed;
 }
 
+/* botão de enviar ocupa a largura toda */
 .formulario .botao {
   display: block;
   width: 100%;
@@ -666,6 +729,7 @@ h1 {
   outline-offset: 2px;
 }
 
+/* caixa de aviso com um traço azul na esquerda */
 .aviso {
   max-width: 640px;
   margin: 0 auto 24px;
@@ -680,6 +744,7 @@ h1 {
   margin-bottom: 4px;
   font-size: 1.1rem;
 }
+/* mensagem de erro, some quando está vazia */
 .erro {
   margin-top: 6px;
   color: #e8b4a8;
@@ -690,6 +755,7 @@ h1 {
   display: none;
 }
 
+/* cartão com foto em cima, usado na página inicial */
 .card-especialidade {
   padding: 0;
   overflow: hidden;
@@ -703,6 +769,7 @@ h1 {
   border-bottom: 1px solid #2a3d54;
 }
 
+/* parte de baixo do cartão de especialidade, com o texto */
 .card-corpo {
   display: flex;
   flex: 1;
@@ -724,6 +791,7 @@ h1 {
   text-align: center;
 }
 
+/* faixa dos profissionais na página inicial */
 .equipe {
   padding-bottom: 56px;
 }
@@ -733,6 +801,7 @@ h1 {
   text-align: center;
 }
 
+/* quatro profissionais lado a lado */
 .equipe-lista {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -753,11 +822,13 @@ h1 {
   margin-bottom: 0;
 }
 
+/* espaço do botão que leva para todos os profissionais */
 .equipe-link {
   margin-top: 32px;
   text-align: center;
 }
 
+/* banner final da página inicial */
 .chamada-familia {
   padding-bottom: 56px;
 }
@@ -766,11 +837,13 @@ h1 {
   margin: 0 auto;
 }
 
+/* título menor dentro do banner */
 .banner-texto h2 {
   margin-bottom: 12px;
   font-size: 2rem;
 }
 
+/* quatro caixas de resumo da agenda do dia */
 .resumo {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -778,6 +851,7 @@ h1 {
   margin-bottom: 24px;
 }
 
+/* caixa de resumo com um traço colorido em cima */
 .resumo-caixa {
   padding: 20px;
   background-color: #16273a;
@@ -787,6 +861,7 @@ h1 {
   text-align: center;
 }
 
+/* cor do traço de cada grupo: azul, verde e vermelho */
 .resumo-agendados {
   border-top-color: #5b9bd5;
 }
@@ -799,6 +874,7 @@ h1 {
   border-top-color: #d9604f;
 }
 
+/* número grande dentro da caixa de resumo */
 .resumo-numero {
   display: block;
   font-family: Georgia, "Times New Roman", serif;
@@ -812,6 +888,7 @@ h1 {
   color: #cfc8b8;
 }
 
+/* caixa da tabela, rola de lado em telas pequenas */
 .tabela-rolagem {
   margin-bottom: 48px;
   border: 1px solid #2a3d54;
@@ -819,11 +896,13 @@ h1 {
   overflow-x: auto;
 }
 
+/* tabela da agenda do dia */
 .tabela-agenda {
   width: 100%;
   border-collapse: collapse;
 }
 
+/* cabeçalho da tabela, com fundo azul */
 .tabela-agenda th {
   padding: 14px 16px;
   background-color: #2a4561;
@@ -837,6 +916,7 @@ h1 {
   white-space: nowrap;
 }
 
+/* linhas alternadas com duas cores para ler melhor */
 .tabela-agenda tbody tr:nth-child(odd) {
   background-color: #16273a;
 }
@@ -849,6 +929,7 @@ h1 {
   background-color: #23405c;
 }
 
+/* etiqueta arredondada com o status da consulta */
 .status {
   display: inline-block;
   padding: 4px 12px;
@@ -857,6 +938,7 @@ h1 {
   font-weight: bold;
 }
 
+/* cores de cada status: azul, verde e vermelho */
 .status-agendado {
   background-color: #1f4e7a;
   color: #d6e9fb;
@@ -872,11 +954,13 @@ h1 {
   color: #fbdcd7;
 }
 
+/* cartão do resumo da consulta, centralizado */
 .confirmacao {
   max-width: 640px;
   margin: 0 auto 24px;
 }
 
+/* lista de definição em duas colunas: nome e valor */
 .resumo-consulta {
   display: grid;
   grid-template-columns: 140px 1fr;
@@ -889,17 +973,20 @@ h1 {
   font-weight: bold;
 }
 
+/* texto pequeno e de cor suave */
 .nota {
   font-size: 0.85rem;
   color: #a9a291;
 }
 
+/* lista com bolinhas dentro do aviso */
 .lista-aviso {
   margin-top: 8px;
   padding-left: 20px;
   list-style: disc;
 }
 
+/* botões da confirmação lado a lado */
 .botoes-confirmacao {
   display: flex;
   justify-content: center;
@@ -908,6 +995,7 @@ h1 {
   margin-bottom: 48px;
 }
 
+/* contorno claro no foco do teclado, para links, botões e campos */
 a:focus-visible,
 button:focus-visible,
 input:focus-visible,
@@ -922,6 +1010,7 @@ textarea:focus-visible,
   outline-offset: 2px;
 }
 
+/* cartões e botões mudam suavemente com o mouse */
 .card {
   transition: transform 0.2s, box-shadow 0.2s;
 }
@@ -935,6 +1024,7 @@ textarea:focus-visible,
   transition: background-color 0.2s, transform 0.2s;
 }
 
+/* indicador de passos do agendamento */
 .passos-agendamento {
   display: flex;
   max-width: 640px;
@@ -942,6 +1032,7 @@ textarea:focus-visible,
   list-style: none;
 }
 
+/* cada passo ocupa uma parte igual da largura */
 .passos-agendamento li {
   position: relative;
   flex: 1;
@@ -949,6 +1040,7 @@ textarea:focus-visible,
   color: #a9a291;
 }
 
+/* linha fina que liga um círculo ao outro */
 .passos-agendamento li + li::before {
   content: "";
   position: absolute;
@@ -958,11 +1050,13 @@ textarea:focus-visible,
   border-top: 2px solid #2a3d54;
 }
 
+/* a linha fica clara depois de um passo concluído */
 .passos-agendamento .concluido + li::before,
 .passos-agendamento .concluido + .atual::before {
   border-top-color: #e9e4d8;
 }
 
+/* círculo numerado do passo */
 .circulo {
   position: relative;
   z-index: 1;
@@ -978,11 +1072,13 @@ textarea:focus-visible,
   font-weight: bold;
 }
 
+/* nome do passo, embaixo do círculo */
 .nome-passo {
   display: block;
   font-size: 0.9rem;
 }
 
+/* passo atual: círculo azul e texto em negrito */
 .passos-agendamento .atual {
   color: #f5efe2;
   font-weight: bold;
@@ -994,6 +1090,7 @@ textarea:focus-visible,
   color: #0e1a28;
 }
 
+/* passo concluído: círculo cheio com um sinal de certo */
 .passos-agendamento .concluido {
   color: #e9e4d8;
 }
@@ -1016,6 +1113,7 @@ textarea:focus-visible,
   transform: rotate(45deg);
 }
 
+/* para quem prefere menos movimento: tira as transições */
 @media (prefers-reduced-motion: reduce) {
   * {
     transition: none !important;
@@ -1029,6 +1127,7 @@ textarea:focus-visible,
   }
 }
 
+/* esconde o checkbox do menu, mas ele continua funcionando no teclado */
 .menu-checkbox {
   position: absolute;
   width: 1px;
@@ -1036,6 +1135,7 @@ textarea:focus-visible,
   opacity: 0;
 }
 
+/* botão Menu, só aparece em telas pequenas */
 .menu-botao {
   display: none;
   align-items: center;
@@ -1062,11 +1162,13 @@ textarea:focus-visible,
   background-color: #1d3349;
 }
 
+/* foco visível no botão Menu para quem usa teclado */
 .menu-checkbox:focus-visible + .menu-botao {
   outline: 3px solid #f5efe2;
   outline-offset: 2px;
 }
 
+/* telas até 960px: profissionais em 2 colunas e menu abaixo do logo */
 @media (max-width: 960px) {
   .equipe-lista {
     grid-template-columns: repeat(2, 1fr);
@@ -1080,6 +1182,7 @@ textarea:focus-visible,
     order: 2;
   }
 
+  /* o menu ocupa uma linha inteira abaixo do logo */
   .cabecalho nav {
     order: 3;
     flex-basis: 100%;
@@ -1090,7 +1193,9 @@ textarea:focus-visible,
   }
 }
 
+/* celulares até 700px: tudo em uma coluna e com peças menores */
 @media (max-width: 700px) {
+  /* cabeçalho mais compacto */
   .cabecalho-conteudo {
     padding-left: 12px;
     padding-right: 12px;
@@ -1116,6 +1221,7 @@ textarea:focus-visible,
     font-size: 0.85rem;
   }
 
+  /* grades viram uma coluna só */
   .grade-cards,
   .passos,
   .rodape-grade {
@@ -1140,12 +1246,14 @@ textarea:focus-visible,
     padding: 12px 12px 4px;
   }
 
+  /* banner mais alto para o texto caber */
   .banner {
     aspect-ratio: auto;
     min-height: 300px;
     background-position: 75% center;
   }
 
+  /* banners internos um pouco mais baixos no celular */
   .banner-servicos,
   .banner-profissionais,
   .banner-agendar,
@@ -1158,6 +1266,7 @@ textarea:focus-visible,
     background-position: 75% center;
   }
 
+  /* o texto cobre o banner com um fundo escuro */
   .banner-texto {
     width: 100%;
     padding: 32px 20px;
@@ -1177,6 +1286,7 @@ textarea:focus-visible,
   }
 }
 
+/* telas até 768px: o menu vira um botão que abre e fecha */
 @media (max-width: 768px) {
   .menu-botao {
     display: flex;
@@ -1184,11 +1294,13 @@ textarea:focus-visible,
     flex-basis: 100%;
   }
 
+  /* lista de links escondida até abrir o menu */
   .cabecalho nav {
     display: none;
     order: 4;
   }
 
+  /* checkbox marcado: a lista de links aparece */
   .menu-checkbox:checked ~ nav {
     display: block;
   }
@@ -1206,10 +1318,12 @@ textarea:focus-visible,
   }
 }
 
+/* margem das páginas na hora de imprimir */
 @page {
   margin: 1.5cm;
 }
 
+/* impressão da agenda: tira cabeçalho e rodapé, fundo branco e texto preto */
 @media print {
   body {
     display: block;
@@ -1218,6 +1332,7 @@ textarea:focus-visible,
     color: #000000;
   }
 
+  /* esconde o que não serve no papel */
   .cabecalho,
   .rodape,
   .menu-botao,
@@ -1225,12 +1340,14 @@ textarea:focus-visible,
     display: none;
   }
 
+  /* o conteúdo ocupa a largura toda da folha */
   .container {
     max-width: none;
     width: 100%;
     padding: 0;
   }
 
+  /* banner só com título e texto em preto, sem imagem */
   .banner {
     display: block;
     height: auto;
@@ -1255,6 +1372,7 @@ textarea:focus-visible,
     color: #000000;
   }
 
+  /* caixas de resumo com borda preta fina e sem cor de fundo */
   .resumo {
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
@@ -1273,6 +1391,7 @@ textarea:focus-visible,
     color: #000000;
   }
 
+  /* tabela sem rolagem */
   .tabela-rolagem {
     margin-bottom: 0;
     border: none;
@@ -1280,14 +1399,17 @@ textarea:focus-visible,
     overflow: visible;
   }
 
+  /* tabela com borda em todas as células e fonte de 12pt */
   .tabela-agenda {
     font-size: 12pt;
   }
 
+  /* cabeçalho da tabela se repete em cada página */
   .tabela-agenda thead {
     display: table-header-group;
   }
 
+  /* a linha não é cortada entre duas páginas */
   .tabela-agenda tr {
     page-break-inside: avoid;
   }
@@ -1306,6 +1428,7 @@ textarea:focus-visible,
     background-color: #ffffff;
   }
 
+  /* status legível sem cor: só borda e texto preto */
   .status {
     padding: 2px 8px;
     border: 1px solid #000000;
