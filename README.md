@@ -25,6 +25,7 @@ agendafacil/
     estilo.css
   js/
     agendar.js
+    data.js
   img/
     fotos, banners, logo e ícones das redes sociais
   README.md
@@ -32,6 +33,7 @@ agendafacil/
 
 - css/estilo.css: estilo de todas as páginas
 - js/agendar.js: script da página de agendamento, que ajusta os horários conforme o dia escolhido
+- js/data.js: script que mostra a data de hoje na agenda do dia e na confirmação
 - img/: imagens usadas no site
 
 ## Como abrir o site
