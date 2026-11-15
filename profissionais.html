@@ -7,12 +7,15 @@
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+  <!-- link de pular ao conteúdo (igual ao da página inicial) -->
   <a class="pular" href="#conteudo">Ir para o conteúdo</a>
+  <!-- cabeçalho (igual ao da página inicial) -->
   <header class="cabecalho">
     <div class="container cabecalho-conteudo">
       <a class="logo" href="index.html"><img src="img/logo.png" alt="" width="44" height="48"><span>AgendaFácil</span></a>
       <input type="checkbox" id="menu-aberto" class="menu-checkbox">
       <label for="menu-aberto" class="menu-botao">Menu</label>
+      <!-- menu principal, aqui a página atual é a que tem a classe ativo -->
       <nav>
         <ul class="menu">
           <li><a href="index.html">Início</a></li>
@@ -29,15 +32,19 @@
     </div>
   </header>
 
+  <!-- conteúdo da página dos profissionais -->
   <main id="conteudo">
     <div class="container">
+      <!-- banner com o título da página -->
       <div class="banner banner-profissionais">
         <div class="banner-texto">
           <h1>Profissionais</h1>
           <p>Uma equipe pronta para cuidar de você.</p>
         </div>
       </div>
+      <!-- grade com um cartão para cada profissional -->
       <div class="grade-cards">
+        <!-- cartão da Dra. Marina: foto, nome, especialidade e serviços -->
         <article class="card card-profissional">
           <img class="foto" src="img/marina.jpg" alt="Dra. Marina Lopes" width="120" height="120">
           <h2>Dra. Marina Lopes</h2>
@@ -48,6 +55,7 @@
           </ul>
           <a class="botao" href="agendar.html">Agendar</a>
         </article>
+        <!-- cartão do Dr. Paulo, dentista -->
         <article class="card card-profissional">
           <img class="foto" src="img/paulo.jpg" alt="Dr. Paulo Mendes" width="120" height="120">
           <h2>Dr. Paulo Mendes</h2>
@@ -57,6 +65,7 @@
           </ul>
           <a class="botao" href="agendar.html">Agendar</a>
         </article>
+        <!-- cartão da Dra. Carla, nutricionista -->
         <article class="card card-profissional">
           <img class="foto" src="img/carla.jpg" alt="Dra. Carla Nogueira" width="120" height="120">
           <h2>Dra. Carla Nogueira</h2>
@@ -67,6 +76,7 @@
           </ul>
           <a class="botao" href="agendar.html">Agendar</a>
         </article>
+        <!-- cartão do Dr. Rafael, fisioterapeuta -->
         <article class="card card-profissional">
           <img class="foto" src="img/rafael.jpg" alt="Dr. Rafael Souza" width="120" height="120">
           <h2>Dr. Rafael Souza</h2>
@@ -80,6 +90,7 @@
     </div>
   </main>
 
+  <!-- rodapé (igual ao da página inicial) -->
   <footer class="rodape">
     <div class="container">
       <div class="rodape-grade">
@@ -99,6 +110,7 @@
         </section>
         <section>
           <h2>Siga a gente</h2>
+          <!-- ícones das redes sociais -->
           <ul class="redes">
             <li><a href="https://www.whatsapp.com" title="WhatsApp"><img src="img/whatsapp.svg" alt="WhatsApp" width="24" height="24"></a></li>
             <li><a href="https://www.facebook.com" title="Facebook"><img src="img/facebook.svg" alt="Facebook" width="24" height="24"></a></li>
