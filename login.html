@@ -7,12 +7,15 @@
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+  <!-- link de pular ao conteúdo (igual ao da página inicial) -->
   <a class="pular" href="#conteudo">Ir para o conteúdo</a>
+  <!-- cabeçalho (igual ao da página inicial) -->
   <header class="cabecalho">
     <div class="container cabecalho-conteudo">
       <a class="logo" href="index.html"><img src="img/logo.png" alt="" width="44" height="48"><span>AgendaFácil</span></a>
       <input type="checkbox" id="menu-aberto" class="menu-checkbox">
       <label for="menu-aberto" class="menu-botao">Menu</label>
+      <!-- menu principal, aqui a página atual é a que tem a classe ativo -->
       <nav>
         <ul class="menu">
           <li><a href="index.html">Início</a></li>
@@ -29,14 +32,17 @@
     </div>
   </header>
 
+  <!-- conteúdo da página de entrar -->
   <main id="conteudo">
     <div class="container">
+      <!-- banner com o título e a frase da página -->
       <div class="banner banner-login">
         <div class="banner-texto">
           <h1>Entrar</h1>
           <p>Acesse sua conta para ver e gerenciar seus agendamentos.</p>
         </div>
       </div>
+      <!-- formulário de acesso, usa só o e-mail e não tem senha -->
       <form class="formulario" method="get" action="agendar.html">
         <fieldset>
           <legend>Acesso</legend>
@@ -49,10 +55,12 @@
 
         <button type="submit" class="botao">Receber link de acesso</button>
       </form>
+      <!-- link para quem ainda não fez o cadastro -->
       <p class="link-cadastro">Ainda não tem cadastro? <a href="cadastro.html">Cadastre-se</a></p>
     </div>
   </main>
 
+  <!-- rodapé (igual ao da página inicial) -->
   <footer class="rodape">
     <div class="container">
       <div class="rodape-grade">
@@ -72,6 +80,7 @@
         </section>
         <section>
           <h2>Siga a gente</h2>
+          <!-- ícones das redes sociais -->
           <ul class="redes">
             <li><a href="https://www.whatsapp.com" title="WhatsApp"><img src="img/whatsapp.svg" alt="WhatsApp" width="24" height="24"></a></li>
             <li><a href="https://www.facebook.com" title="Facebook"><img src="img/facebook.svg" alt="Facebook" width="24" height="24"></a></li>
