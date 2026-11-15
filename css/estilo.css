@@ -226,6 +226,10 @@ h1 {
   background-image: url("../img/recepcao.jpg");
 }
 
+.banner-confirmacao {
+  background-image: url("../img/paciente.jpg");
+}
+
 .banner-familia {
   background-image: url("../img/familia.jpg");
 }
@@ -697,6 +701,42 @@ h1 {
 .status-cancelado {
   background-color: #7a2a22;
   color: #fbdcd7;
+}
+
+.confirmacao {
+  max-width: 640px;
+  margin: 0 auto 24px;
+}
+
+.resumo-consulta {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 10px 16px;
+  margin-bottom: 16px;
+}
+
+.resumo-consulta dt {
+  color: #9db4cc;
+  font-weight: bold;
+}
+
+.nota {
+  font-size: 0.85rem;
+  color: #a9a291;
+}
+
+.lista-aviso {
+  margin-top: 8px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.botoes-confirmacao {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 48px;
 }
 
 @media (max-width: 700px) {
