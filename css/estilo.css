@@ -828,6 +828,20 @@ h1 {
   margin-bottom: 48px;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+.formulario input:focus-visible,
+.formulario select:focus-visible,
+.formulario textarea:focus-visible,
+.formulario .botao:focus-visible,
+.horarios input:focus-visible + label {
+  outline: 3px solid #f5efe2;
+  outline-offset: 2px;
+}
+
 @media (max-width: 960px) {
   .cabecalho-conteudo {
     row-gap: 4px;
