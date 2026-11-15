@@ -54,6 +54,8 @@ h1 {
 
 .cabecalho-conteudo {
   display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
   justify-content: space-between;
   align-items: center;
   padding-top: 14px;
@@ -79,12 +81,13 @@ h1 {
 
 .menu {
   display: flex;
-  gap: 8px;
+  flex-wrap: wrap;
+  gap: 4px;
 }
 
 .menu a {
   display: block;
-  padding: 8px 14px;
+  padding: 8px 12px;
   border-bottom: 2px solid transparent;
   color: #cfc8b8;
   font-size: 0.95rem;
