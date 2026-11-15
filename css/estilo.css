@@ -724,6 +724,40 @@ h1 {
   text-align: center;
 }
 
+.equipe {
+  padding-bottom: 56px;
+}
+
+.equipe h2 {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.equipe-lista {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  text-align: center;
+}
+
+.equipe-lista .foto {
+  display: block;
+  margin: 0 auto 12px;
+}
+
+.equipe-lista h3 {
+  font-size: 1.1rem;
+}
+
+.equipe-lista .especialidade {
+  margin-bottom: 0;
+}
+
+.equipe-link {
+  margin-top: 32px;
+  text-align: center;
+}
+
 .chamada-familia {
   padding-bottom: 56px;
 }
@@ -1034,6 +1068,10 @@ textarea:focus-visible,
 }
 
 @media (max-width: 960px) {
+  .equipe-lista {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .cabecalho-conteudo {
     row-gap: 4px;
   }
