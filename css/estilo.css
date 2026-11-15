@@ -924,6 +924,87 @@ textarea:focus-visible,
   transition: background-color 0.2s, transform 0.2s;
 }
 
+.passos-agendamento {
+  display: flex;
+  max-width: 640px;
+  margin: 0 auto 24px;
+  list-style: none;
+}
+
+.passos-agendamento li {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  color: #a9a291;
+}
+
+.passos-agendamento li + li::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  right: 50%;
+  width: 100%;
+  border-top: 2px solid #2a3d54;
+}
+
+.passos-agendamento .concluido + li::before,
+.passos-agendamento .concluido + .atual::before {
+  border-top-color: #e9e4d8;
+}
+
+.circulo {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin: 0 auto 6px;
+  line-height: 32px;
+  border: 2px solid #5f7a96;
+  border-radius: 50%;
+  background-color: #0e1a28;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: bold;
+}
+
+.nome-passo {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.passos-agendamento .atual {
+  color: #f5efe2;
+  font-weight: bold;
+}
+
+.passos-agendamento .atual .circulo {
+  border-color: #9db4cc;
+  background-color: #9db4cc;
+  color: #0e1a28;
+}
+
+.passos-agendamento .concluido {
+  color: #e9e4d8;
+}
+
+.passos-agendamento .concluido .circulo {
+  border-color: #e9e4d8;
+  background-color: #e9e4d8;
+  color: #e9e4d8;
+}
+
+.passos-agendamento .concluido .circulo::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  width: 7px;
+  height: 14px;
+  border-right: 3px solid #0e1a28;
+  border-bottom: 3px solid #0e1a28;
+  transform: rotate(45deg);
+}
+
 @media (prefers-reduced-motion: reduce) {
   * {
     transition: none !important;
@@ -1000,6 +1081,10 @@ textarea:focus-visible,
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .nome-passo {
+    font-size: 0.8rem;
+  }
+
   .formulario,
   .aviso {
     max-width: 100%;
@@ -1060,7 +1145,8 @@ textarea:focus-visible,
   }
 
   .cabecalho,
-  .rodape {
+  .rodape,
+  .passos-agendamento {
     display: none;
   }
 
