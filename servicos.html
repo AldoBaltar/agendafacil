@@ -7,12 +7,15 @@
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+  <!-- link de pular ao conteúdo (igual ao da página inicial) -->
   <a class="pular" href="#conteudo">Ir para o conteúdo</a>
+  <!-- cabeçalho (igual ao da página inicial) -->
   <header class="cabecalho">
     <div class="container cabecalho-conteudo">
       <a class="logo" href="index.html"><img src="img/logo.png" alt="" width="44" height="48"><span>AgendaFácil</span></a>
       <input type="checkbox" id="menu-aberto" class="menu-checkbox">
       <label for="menu-aberto" class="menu-botao">Menu</label>
+      <!-- menu principal, aqui a página atual é a que tem a classe ativo -->
       <nav>
         <ul class="menu">
           <li><a href="index.html">Início</a></li>
@@ -29,15 +32,19 @@
     </div>
   </header>
 
+  <!-- conteúdo da página de serviços -->
   <main id="conteudo">
     <div class="container">
+      <!-- banner com o título e a frase da página -->
       <div class="banner banner-servicos">
         <div class="banner-texto">
           <h1>Serviços</h1>
           <p>Conheça o que oferecemos e escolha o que você precisa.</p>
         </div>
       </div>
+      <!-- grade com um cartão para cada serviço oferecido -->
       <div class="grade-cards">
+        <!-- cartão do serviço: nome, descrição, duração, preço e botão -->
         <article class="card">
           <h2>Consulta clínica geral</h2>
           <p class="descricao">Avaliação completa da sua saúde com a médica clínica geral.</p>
@@ -47,6 +54,7 @@
           </ul>
           <a class="botao" href="agendar.html">Agendar</a>
         </article>
+        <!-- cartão da consulta de retorno, mesmo formato do anterior -->
         <article class="card">
           <h2>Consulta de retorno</h2>
           <p class="descricao">Acompanhamento para revisar exames e a evolução do tratamento.</p>
@@ -56,6 +64,7 @@
           </ul>
           <a class="botao" href="agendar.html">Agendar</a>
         </article>
+        <!-- cartão da limpeza dental -->
         <article class="card">
           <h2>Limpeza dental</h2>
           <p class="descricao">Remoção de placa e tártaro para manter os dentes saudáveis.</p>
@@ -65,6 +74,7 @@
           </ul>
           <a class="botao" href="agendar.html">Agendar</a>
         </article>
+        <!-- cartão da avaliação nutricional -->
         <article class="card">
           <h2>Avaliação nutricional</h2>
           <p class="descricao">Análise dos hábitos alimentares e plano de alimentação personalizado.</p>
@@ -74,6 +84,7 @@
           </ul>
           <a class="botao" href="agendar.html">Agendar</a>
         </article>
+        <!-- cartão da sessão de fisioterapia -->
         <article class="card">
           <h2>Sessão de fisioterapia</h2>
           <p class="descricao">Exercícios e técnicas para aliviar dores e recuperar movimentos.</p>
@@ -87,6 +98,7 @@
     </div>
   </main>
 
+  <!-- rodapé (igual ao da página inicial) -->
   <footer class="rodape">
     <div class="container">
       <div class="rodape-grade">
@@ -106,6 +118,7 @@
         </section>
         <section>
           <h2>Siga a gente</h2>
+          <!-- ícones das redes sociais -->
           <ul class="redes">
             <li><a href="https://www.whatsapp.com" title="WhatsApp"><img src="img/whatsapp.svg" alt="WhatsApp" width="24" height="24"></a></li>
             <li><a href="https://www.facebook.com" title="Facebook"><img src="img/facebook.svg" alt="Facebook" width="24" height="24"></a></li>
