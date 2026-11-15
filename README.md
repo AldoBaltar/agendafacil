@@ -4,6 +4,24 @@ Site para marcar consultas em clínicas e consultórios pequenos: o paciente esc
 
 Autores: Aldo Baltar e Pedro Pereira
 
+## Sobre o projeto
+
+Muitas clínicas pequenas ainda marcam consultas por WhatsApp, por telefone ou em um caderno. Isso gera horários duplicados, esquecimentos e falta de histórico dos atendimentos.
+
+O AgendaFácil junta tudo em um lugar só e mostra apenas os horários livres, para que o paciente marque a consulta sem confusão e a clínica tenha a agenda do dia organizada.
+
+Para o paciente:
+
+- Marcação rápida, a qualquer hora
+- Horários livres à vista
+- Escolha do profissional de confiança
+
+Para a clínica:
+
+- Agenda do dia organizada em uma só tela
+- Menos ligações para marcar horários
+- Menos faltas e horários vazios
+
 ## Páginas
 
 - index.html: página inicial
