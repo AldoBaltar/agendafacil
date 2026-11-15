@@ -7,12 +7,16 @@
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+  <!-- link escondido que deixa quem usa teclado pular direto ao conteúdo -->
   <a class="pular" href="#conteudo">Ir para o conteúdo</a>
+  <!-- cabeçalho com o logo, o menu e os botões de acesso -->
   <header class="cabecalho">
     <div class="container cabecalho-conteudo">
       <a class="logo" href="index.html"><img src="img/logo.png" alt="" width="44" height="48"><span>AgendaFácil</span></a>
+      <!-- botão Menu do celular: o checkbox abre e fecha a lista de links -->
       <input type="checkbox" id="menu-aberto" class="menu-checkbox">
       <label for="menu-aberto" class="menu-botao">Menu</label>
+      <!-- menu principal, a página atual fica com a classe ativo -->
       <nav>
         <ul class="menu">
           <li><a href="index.html" class="ativo">Início</a></li>
@@ -22,6 +26,7 @@
           <li><a href="agenda.html">Agenda do dia</a></li>
         </ul>
       </nav>
+      <!-- botões de entrar e de cadastrar, sempre visíveis -->
       <div class="acesso">
         <a class="botao-contorno" href="login.html">Entrar</a>
         <a href="cadastro.html" class="botao">Cadastrar</a>
@@ -29,7 +34,9 @@
     </div>
   </header>
 
+  <!-- conteúdo principal da página inicial -->
   <main id="conteudo">
+    <!-- abertura: banner com a chamada para agendar -->
     <section class="abertura">
       <div class="container">
         <div class="banner banner-inicio">
@@ -42,10 +49,12 @@
       </div>
     </section>
 
+    <!-- passo a passo de como marcar a consulta -->
     <section class="como-funciona">
       <div class="container">
         <h2>Como funciona</h2>
         <ol class="passos">
+          <!-- cada passo tem o número, o título e uma frase -->
           <li class="passo">
             <span class="numero">1</span>
             <h3>Escolha</h3>
@@ -65,10 +74,12 @@
       </div>
     </section>
 
+    <!-- cartões com as especialidades da clínica -->
     <section class="especialidades">
       <div class="container">
         <h2>Cuidado em cada especialidade</h2>
         <div class="grade-cards">
+          <!-- cartão de especialidade: foto, texto e botão de agendar -->
           <article class="card card-especialidade">
             <img src="img/dentista.jpg" alt="Dentista atendendo um paciente sorridente" width="1672" height="941">
             <div class="card-corpo">
@@ -97,6 +108,7 @@
       </div>
     </section>
 
+    <!-- faixa com os profissionais que atendem na clínica -->
     <section class="equipe">
       <div class="container">
         <h2>Quem atende você</h2>
@@ -122,10 +134,12 @@
             <p class="especialidade">Fisioterapeuta</p>
           </li>
         </ul>
+        <!-- link para a página com todos os profissionais -->
         <p class="equipe-link"><a class="botao-contorno" href="profissionais.html">Ver todos os profissionais</a></p>
       </div>
     </section>
 
+    <!-- banner final convidando a agendar uma consulta -->
     <section class="chamada-familia">
       <div class="container">
         <div class="banner banner-familia">
@@ -139,9 +153,11 @@
     </section>
   </main>
 
+  <!-- rodapé com contatos, endereço e redes sociais -->
   <footer class="rodape">
     <div class="container">
       <div class="rodape-grade">
+        <!-- coluna com os telefones e o e-mail de contato -->
         <section>
           <h2>Fale conosco</h2>
           <ul>
@@ -151,11 +167,13 @@
             <li>E-mail: contato@agendafacil.com.br</li>
           </ul>
         </section>
+        <!-- coluna com o endereço e o horário de funcionamento -->
         <section>
           <h2>Onde estamos</h2>
           <address>Av. Epitácio Pessoa, 1200 - Tambaú<br>João Pessoa - PB, 58039-000</address>
           <p>Segunda a sexta, das 7h às 19h<br>Sábado, das 8h às 12h</p>
         </section>
+        <!-- coluna com os ícones das redes sociais -->
         <section>
           <h2>Siga a gente</h2>
           <ul class="redes">
@@ -166,6 +184,7 @@
           <p>@agendafacil</p>
         </section>
       </div>
+      <!-- linha final com o nome dos autores -->
       <p class="rodape-final">AgendaFácil - Autores: Aldo Baltar e Pedro Pereira</p>
     </div>
   </footer>
