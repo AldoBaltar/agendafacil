@@ -219,6 +219,10 @@ h1 {
   background-image: url("../img/recepcao.jpg");
 }
 
+.banner-cadastro {
+  background-image: url("../img/recepcao.jpg");
+}
+
 .banner-familia {
   background-image: url("../img/familia.jpg");
 }
@@ -441,6 +445,26 @@ h1 {
   outline: 3px solid #9db4cc;
   outline-offset: 1px;
   border-color: #e9e4d8;
+}
+
+.campo-check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.campo-check input {
+  margin-top: 6px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.campo .campo-check label,
+.campo-check label {
+  display: inline;
+  margin-bottom: 0;
+  font-weight: normal;
 }
 
 .formulario .horarios {
