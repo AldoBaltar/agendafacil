@@ -16,6 +16,7 @@ body {
 
 main {
   flex: 1;
+  scroll-margin-top: 100px;
 }
 
 a {
@@ -45,6 +46,22 @@ h1 {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.pular {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 200;
+  padding: 10px 16px;
+  background-color: #f5efe2;
+  color: #0e1a28;
+  font-weight: bold;
+  transform: translateY(-200%);
+}
+
+.pular:focus {
+  transform: translateY(0);
 }
 
 .cabecalho {
