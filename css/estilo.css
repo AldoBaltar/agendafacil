@@ -48,6 +48,9 @@ h1 {
 }
 
 .cabecalho {
+  position: sticky;
+  top: 0;
+  z-index: 100;
   background-color: #08111b;
   border-bottom: 1px solid #2a3d54;
 }
