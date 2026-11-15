@@ -7,12 +7,15 @@
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+  <!-- link de pular ao conteúdo (igual ao da página inicial) -->
   <a class="pular" href="#conteudo">Ir para o conteúdo</a>
+  <!-- cabeçalho (igual ao da página inicial) -->
   <header class="cabecalho">
     <div class="container cabecalho-conteudo">
       <a class="logo" href="index.html"><img src="img/logo.png" alt="" width="44" height="48"><span>AgendaFácil</span></a>
       <input type="checkbox" id="menu-aberto" class="menu-checkbox">
       <label for="menu-aberto" class="menu-botao">Menu</label>
+      <!-- menu principal, aqui a página atual é a que tem a classe ativo -->
       <nav>
         <ul class="menu">
           <li><a href="index.html">Início</a></li>
@@ -29,19 +32,23 @@
     </div>
   </header>
 
+  <!-- conteúdo da página de confirmação -->
   <main id="conteudo">
     <div class="container">
+      <!-- banner avisando que o horário foi reservado -->
       <div class="banner banner-confirmacao">
         <div class="banner-texto">
           <h1>Agendamento confirmado</h1>
           <p>Seu horário foi reservado.</p>
         </div>
       </div>
+      <!-- indicador de passos: os passos 1 e 2 já foram concluídos -->
       <ol class="passos-agendamento">
         <li class="concluido"><span class="circulo">1</span><span class="nome-passo">Seus dados</span></li>
         <li class="concluido"><span class="circulo">2</span><span class="nome-passo">Sobre a consulta</span></li>
         <li class="atual" aria-current="step"><span class="circulo">3</span><span class="nome-passo">Confirmação</span></li>
       </ol>
+      <!-- cartão com o resumo da consulta, feito com lista de definição -->
       <section class="card confirmacao">
         <h2>Resumo da consulta</h2>
         <dl class="resumo-consulta">
@@ -58,8 +65,10 @@
           <dt>Status</dt>
           <dd>Agendado</dd>
         </dl>
+        <!-- aviso de que os dados do resumo são só um exemplo -->
         <p class="nota">Este é um resumo de exemplo.</p>
       </section>
+      <!-- orientações para o paciente antes da consulta -->
       <aside class="aviso">
         <h2>Orientações</h2>
         <ul class="lista-aviso">
@@ -68,6 +77,7 @@
           <li>Para remarcar ou cancelar, ligue para a central de agendamento: (83) 3221-4500.</li>
         </ul>
       </aside>
+      <!-- botões para ver a agenda do dia ou voltar ao início -->
       <div class="botoes-confirmacao">
         <a class="botao" href="agenda.html">Ver agenda do dia</a>
         <a class="botao" href="index.html">Voltar ao início</a>
@@ -75,6 +85,7 @@
     </div>
   </main>
 
+  <!-- rodapé (igual ao da página inicial) -->
   <footer class="rodape">
     <div class="container">
       <div class="rodape-grade">
@@ -94,6 +105,7 @@
         </section>
         <section>
           <h2>Siga a gente</h2>
+          <!-- ícones das redes sociais -->
           <ul class="redes">
             <li><a href="https://www.whatsapp.com" title="WhatsApp"><img src="img/whatsapp.svg" alt="WhatsApp" width="24" height="24"></a></li>
             <li><a href="https://www.facebook.com" title="Facebook"><img src="img/facebook.svg" alt="Facebook" width="24" height="24"></a></li>
