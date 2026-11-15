@@ -11,6 +11,10 @@ Autores: Aldo Baltar e Pedro Pereira
 - profissionais.html: profissionais
 - agendar.html: agendamento
 - agenda.html: agenda do dia
+- cadastro.html: cadastro do cliente
+- confirmacao.html: resumo da consulta agendada
+
+A agenda do dia pode ser impressa com Ctrl+P.
 
 ## Estrutura de pastas
 
@@ -21,6 +25,8 @@ agendafacil/
   profissionais.html
   agendar.html
   agenda.html
+  cadastro.html
+  confirmacao.html
   css/
     estilo.css
   js/
