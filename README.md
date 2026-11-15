@@ -13,6 +13,7 @@ Autores: Aldo Baltar e Pedro Pereira
 - agenda.html: agenda do dia
 - cadastro.html: cadastro do cliente
 - confirmacao.html: resumo da consulta agendada
+- login.html: entrar na conta (acesso por e-mail)
 
 A agenda do dia pode ser impressa com Ctrl+P.
 
@@ -27,6 +28,7 @@ agendafacil/
   agenda.html
   cadastro.html
   confirmacao.html
+  login.html
   css/
     estilo.css
   js/
