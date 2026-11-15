@@ -1020,6 +1020,44 @@ textarea:focus-visible,
   }
 }
 
+.menu-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.menu-botao {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  border: 1px solid #9db4cc;
+  border-radius: 4px;
+  color: #f5efe2;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.menu-botao::before {
+  content: "";
+  width: 18px;
+  height: 2px;
+  margin-right: 12px;
+  background-color: #f5efe2;
+  box-shadow: 0 -6px 0 #f5efe2, 0 6px 0 #f5efe2;
+}
+
+.menu-botao:hover {
+  background-color: #1d3349;
+}
+
+.menu-checkbox:focus-visible + .menu-botao {
+  outline: 3px solid #f5efe2;
+  outline-offset: 2px;
+}
+
 @media (max-width: 960px) {
   .cabecalho-conteudo {
     row-gap: 4px;
@@ -1063,11 +1101,6 @@ textarea:focus-visible,
   .acesso .botao {
     padding: 0 10px;
     font-size: 0.85rem;
-  }
-
-  .menu a {
-    padding: 8px 10px;
-    font-size: 0.9rem;
   }
 
   .grade-cards,
@@ -1132,6 +1165,35 @@ textarea:focus-visible,
   }
 }
 
+@media (max-width: 768px) {
+  .menu-botao {
+    display: flex;
+    order: 3;
+    flex-basis: 100%;
+  }
+
+  .cabecalho nav {
+    display: none;
+    order: 4;
+  }
+
+  .menu-checkbox:checked ~ nav {
+    display: block;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu a {
+    padding: 12px 14px;
+    font-size: 0.95rem;
+  }
+}
+
 @page {
   margin: 1.5cm;
 }
@@ -1146,6 +1208,7 @@ textarea:focus-visible,
 
   .cabecalho,
   .rodape,
+  .menu-botao,
   .passos-agendamento {
     display: none;
   }
