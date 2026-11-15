@@ -842,6 +842,38 @@ textarea:focus-visible,
   outline-offset: 2px;
 }
 
+.card,
+.beneficio,
+.passo {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover,
+.beneficio:hover,
+.passo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.45);
+}
+
+.formulario .botao {
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+
+  .botao:hover,
+  .botao-contorno:hover,
+  .redes a:hover,
+  .card:hover,
+  .beneficio:hover,
+  .passo:hover {
+    transform: none;
+  }
+}
+
 @media (max-width: 960px) {
   .cabecalho-conteudo {
     row-gap: 4px;
