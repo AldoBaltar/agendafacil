@@ -580,6 +580,54 @@ h1 {
   font-weight: normal;
 }
 
+.legenda {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+}
+
+.legenda li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.amostra {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #5f7a96;
+  border-radius: 4px;
+  background-color: #0e1a28;
+}
+
+.amostra-selecionado {
+  background-color: #e9e4d8;
+  border: 3px solid #e9e4d8;
+  box-shadow: inset 0 0 0 2px #0e1a28;
+}
+
+.amostra-ocupado {
+  background-color: #1d2631;
+  border-color: #3a4552;
+}
+
+.amostra-ocupado::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  right: 2px;
+  border-top: 2px solid #77808a;
+}
+
+.legenda-ocupado {
+  text-decoration: line-through;
+}
+
 .formulario .horarios {
   margin-bottom: 16px;
 }
