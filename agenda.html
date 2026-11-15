@@ -7,12 +7,15 @@
   <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
+  <!-- link de pular ao conteúdo (igual ao da página inicial) -->
   <a class="pular" href="#conteudo">Ir para o conteúdo</a>
+  <!-- cabeçalho (igual ao da página inicial) -->
   <header class="cabecalho">
     <div class="container cabecalho-conteudo">
       <a class="logo" href="index.html"><img src="img/logo.png" alt="" width="44" height="48"><span>AgendaFácil</span></a>
       <input type="checkbox" id="menu-aberto" class="menu-checkbox">
       <label for="menu-aberto" class="menu-botao">Menu</label>
+      <!-- menu principal, aqui a página atual é a que tem a classe ativo -->
       <nav>
         <ul class="menu">
           <li><a href="index.html">Início</a></li>
@@ -29,8 +32,10 @@
     </div>
   </header>
 
+  <!-- conteúdo da agenda do dia -->
   <main id="conteudo">
     <div class="container">
+      <!-- banner com o título e a data de hoje (preenchida pelo script) -->
       <div class="banner banner-agenda">
         <div class="banner-texto">
           <h1>Agenda do dia <span id="data-hoje">11/11/2026</span></h1>
@@ -38,7 +43,9 @@
         </div>
       </div>
 
+      <!-- quatro caixas com o resumo das consultas do dia -->
       <section class="resumo">
+        <!-- cada caixa mostra um número e o nome do grupo -->
         <div class="resumo-caixa">
           <span class="resumo-numero">8</span>
           <span class="resumo-texto">Total</span>
@@ -57,8 +64,10 @@
         </div>
       </section>
 
+      <!-- tabela dentro de uma caixa que rola de lado no celular -->
       <div class="tabela-rolagem">
         <table class="tabela-agenda">
+          <!-- títulos das colunas -->
           <thead>
             <tr>
               <th scope="col">Horário</th>
@@ -68,7 +77,9 @@
               <th scope="col">Status</th>
             </tr>
           </thead>
+          <!-- uma linha para cada consulta do dia -->
           <tbody>
+          <!-- primeiras consultas, já concluídas (etiqueta verde) -->
           <tr>
             <td>08:00</td>
             <td>Fernanda Lima</td>
@@ -90,6 +101,7 @@
             <td>Dra. Carla Nogueira</td>
             <td><span class="status status-concluido">Concluído</span></td>
           </tr>
+          <!-- consulta cancelada (etiqueta vermelha) -->
           <tr>
             <td>09:30</td>
             <td>Carlos Eduardo Dias</td>
@@ -97,6 +109,7 @@
             <td>Dr. Rafael Souza</td>
             <td><span class="status status-cancelado">Cancelado</span></td>
           </tr>
+          <!-- daqui para baixo as consultas ainda agendadas (etiqueta azul) -->
           <tr>
             <td>10:00</td>
             <td>Patrícia Alves</td>
@@ -131,6 +144,7 @@
     </div>
   </main>
 
+  <!-- rodapé (igual ao da página inicial) -->
   <footer class="rodape">
     <div class="container">
       <div class="rodape-grade">
@@ -150,6 +164,7 @@
         </section>
         <section>
           <h2>Siga a gente</h2>
+          <!-- ícones das redes sociais -->
           <ul class="redes">
             <li><a href="https://www.whatsapp.com" title="WhatsApp"><img src="img/whatsapp.svg" alt="WhatsApp" width="24" height="24"></a></li>
             <li><a href="https://www.facebook.com" title="Facebook"><img src="img/facebook.svg" alt="Facebook" width="24" height="24"></a></li>
@@ -161,6 +176,7 @@
       <p class="rodape-final">AgendaFácil - Autores: Aldo Baltar e Pedro Pereira</p>
     </div>
   </footer>
+  <!-- script que escreve a data de hoje no título -->
   <script src="js/data.js"></script>
 </body>
 </html>
